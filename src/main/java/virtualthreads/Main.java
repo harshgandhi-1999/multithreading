@@ -3,7 +3,7 @@ package virtualthreads;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Demo {
+public class Main {
 
     public static void main(String[] args) throws InterruptedException{
         // if we create millions of threads and try to run , all thread cannot run since our cpu resources are limited
@@ -22,7 +22,8 @@ public class Demo {
         };
 
         for(int i=0;i<threadCount;i++){
-            Thread thread = Thread.ofVirtual().unstarted(runnable);
+//            Thread thread = Thread.ofVirtual().unstarted(runnable);
+            Thread thread = new Thread(runnable);
             thread.setName("Thread-"+i);
             thread.start();
 
