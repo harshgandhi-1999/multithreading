@@ -1,4 +1,4 @@
-package questions.easy.evenodd;
+package questions.evenodd;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException{

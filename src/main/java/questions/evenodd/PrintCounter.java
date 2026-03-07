@@ -1,4 +1,4 @@
-package questions.easy.evenodd;
+package questions.evenodd;
 
 public class PrintCounter {
 

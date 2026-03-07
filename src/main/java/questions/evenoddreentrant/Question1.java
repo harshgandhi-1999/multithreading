@@ -1,4 +1,4 @@
-package questions.easy;
+package questions.evenoddreentrant;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
